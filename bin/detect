@@ -2,6 +2,7 @@
 
 # this pack is valid for apps with a lotus directory in the root with both a
 # package.json and a bower.json present in that directory.
+echo "-----> Searching for a 'lotus' directory with a 'package.json' and 'bower.json'"
 if [ -d $1/lotus ] && [ -f $1/lotus/package.json ] && [ -f $1/lotus/bower.json ]; then
   exit 0
 else
