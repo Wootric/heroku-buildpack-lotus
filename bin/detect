@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# this pack is valid for apps with a hello.txt in the root
+if [ -d $1/lotus ]; then
+  echo $1
+  echo "has lotus"
+  exit 0
+else
+  exit 1
+fi
