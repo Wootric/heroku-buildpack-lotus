@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "-----> Found a 'lotus' directory with a 'package.json' and 'bower.json'"
+
+echo "-----> Switching to lotus directory"
+cd $1/lotus
+
+echo "-----> Running 'npm install'"
+npm install
+
+echo "-----> Running 'bower install'"
+bower install
